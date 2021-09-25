@@ -21,6 +21,12 @@ def diabetes_pre(request):
     age = request.POST.get("Age")
 
     diabetes_data = [[pregnancies, glucose, bloodpressure, skinthickness, insulin, BMI, DiabetesPedigreeFunction, age]]
+    #     diabetes_model = pickle.load(open('diabetes_model.pickle', 'rb'))
+    # # diabetes_model = pd.read_pickle('r',"diabetes_model.pickle")
+    # prediction = diabetes_model.predict(
+    #     [[pregnancies, glucose, bloodpressure, skinthickness, insulin, BMI, DiabetesPedigreeFunction, age]])
+    # outcome = prediction
+    
     print(diabetes_data)
     outcome = 0
 
